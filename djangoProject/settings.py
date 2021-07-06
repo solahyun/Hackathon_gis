@@ -24,7 +24,7 @@ while True:
     if not line:
         break
     line = line.replace('\n', '')
-    start = line.fine('=')
+    start = line.find('=')
 
     key = line[:start]
     value = line[start+1:]
