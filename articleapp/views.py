@@ -1,5 +1,4 @@
 from django.contrib.auth.decorators import login_required
-from django.shortcuts import render
 
 # Create your views here.
 from django.urls import reverse_lazy, reverse
@@ -8,7 +7,7 @@ from django.views.generic import CreateView, DetailView, UpdateView, DeleteView
 
 from articleapp.forms import ArticleCreationForm
 from articleapp.models import Article
-from articleapp.templates.articleapp.decorators import article_ownership_required
+from articleapp.decorators import article_ownership_required
 
 
 @method_decorator(login_required, 'get')
