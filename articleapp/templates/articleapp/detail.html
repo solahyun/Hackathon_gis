@@ -42,7 +42,8 @@
                 <div class="comment_box">
                     <div>
                         <span class="NNS_B"
-                              style="font-size: 1.3rem;">
+                              style="font-size: 1.3rem;
+                               ">
                             {{ comment.writer.profile.nickname }}
                         </span>
                         <span> {{ comment.created_at }}</span>
@@ -63,7 +64,6 @@
                 </div>
 
             {% endfor %}
-
 
             {%  include 'commentapp/create.html' %}
 
