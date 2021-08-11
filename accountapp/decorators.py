@@ -11,3 +11,4 @@ def account_ownership_required(func):
             return HttpResponseForbidden()
 
     return decorated
+
